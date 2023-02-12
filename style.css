@@ -127,3 +127,32 @@ header
     width: 90%;
   }
 }
+@media (max-width: 450px) {
+  header {
+    padding: 20px;
+  }
+
+  .logo {
+    font-size: 1.2em;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .parallax #text {
+    font-size: 1.5em;
+  }
+
+  .sec {
+    padding: 30px;
+  }
+
+  .sec h2 {
+    font-size: 1.5em;
+  }
+
+  .sec p {
+    font-size: 0.8em;
+  }
+}
