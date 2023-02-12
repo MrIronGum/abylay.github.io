@@ -31,111 +31,84 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
    <script>
-        gsap.from("#m2", {
-          scrollTrigger: {
-            scrub: true,
-            triggers: [
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth > 991 ? 991 : window.innerWidth,
-                markers: true
-              },
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth <= 991 ? window.innerWidth : null,
-                markers: true
-              }
-            ]
-          },
-          y: 100
-        });
-      
-        gsap.from("#t2", {
-          scrollTrigger: {
-            scrub: true,
-            triggers: [
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth > 991 ? 991 : window.innerWidth,
-                markers: true
-              },
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth <= 991 ? window.innerWidth : null,
-                markers: true
-              }
-            ]
-          },
-          x: -50
-        });
-      
-        gsap.from("#t1", {
-          scrollTrigger: {
-            scrub: true,
-            triggers: [
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth > 991 ? 991 : window.innerWidth,
-                markers: true
-              },
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth <= 991 ? window.innerWidth : null,
-                markers: true
-              }
-            ]
-          },
-          x: 50
-        });
-      
-        gsap.from("#man", {
-          scrollTrigger: {
-            scrub: true,
-            triggers: [
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth > 991 ? 991 : window.innerWidth,
-                markers: true
-              },
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth <= 991 ? window.innerWidth : null,
-                markers: true
-              }
-            ]
-          },
-          x: -250
-        });
-      
-        gsap.from("#plants", {
-          scrollTrigger: {
-            scrub: true,
-            triggers: [
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth > 991 ? 991 : window.innerWidth,
-                markers: true
-              },
-              {
-                start: "top 70%",
-                end: "bottom 30%",
-                viewport: window.innerWidth <= 991 ? window.innerWidth : null,
-                markers: true
-              }
-            ]
-          },
-          x: -50
-        });
-        </script>
+        if(window.innerWidth < 500){
+            gsap.from("#m2",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                y:50,
+            })
+            gsap.from("#t2",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:-15,
+            })
+            gsap.from("#t1",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:15,
+            })
+            gsap.from("#man",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:-70,
+            })
+            gsap.from("#plants",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:-15,
+            })
+            gsap.from("#text",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                y:-40,
+            })
+        }
+        else if(window.innerWidth < 768) {
+            gsap.from("#m2",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                y:100,
+            })
+            gsap.from("#t2",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:-30,
+            })
+            gsap.from("#t1",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:30,
+            })
+            gsap.from("#man",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:-200,
+            })
+            gsap.from("#plants",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:-30,
+            })
+            gsap.from("#text",{
+                scrollTrigger : {
+                    scrub: true
+                },
+                x:30,
+            })
+        }
+        
+    </script>
 
     </body>
 </html>
