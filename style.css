@@ -1,27 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
-@media only screen and (max-width: 768px) {
-    header {
-        padding: 15px;
-    }
-    .logo {
-        font-size: 1.5em;
-    }
-    .parallax {
-        height: 75vh;
-    }
-    #text {
-        font-size: 2em;
-    }
-    .sec {
-        padding: 50px;
-    }
-    .sec h2 {
-        font-size: 2em;
-    }
-    .sec p {
-        font-size: 0.8em;
-    }
-}
 *
 {
     margin: 0;
@@ -120,4 +97,33 @@ header
     font-size: 1em;
     color:#fff;
     font-weight: 300;
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 20px 20px;
+  }
+
+  .logo {
+    font-size: 1.5em;
+  }
+
+  .navigation {
+    display: none;
+  }
+
+  .parallax #text {
+    font-size: 2em;
+  }
+
+  .sec {
+    padding: 50px;
+  }
+
+  .sec h2 {
+    font-size: 2em;
+  }
+  .sec p {
+    width: 90%;
+  }
 }
