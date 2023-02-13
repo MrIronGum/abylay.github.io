@@ -101,7 +101,7 @@ header
 
 @media (min-width: 700px) and (max-width: 1024px) {
   header {
-    padding: 0px;
+    padding: 10px 15px;
   }
 
   .logo {
