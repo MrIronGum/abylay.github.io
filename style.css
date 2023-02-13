@@ -18,7 +18,7 @@ header
     top: 0;
     left: 0;
     width: 100%;
-    padding: 30px 100px;
+    padding: 0; /*30,100*/ 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -83,7 +83,7 @@ header
 .sec
 {
     position: relative;
-    padding: 100px;
+    padding: 0; /*100*/ 
     background: #112434;
 }
 .sec h2
@@ -101,7 +101,7 @@ header
 
 @media (min-width: 700px) and (max-width: 1024px) {
   header {
-    padding: 10px 15px;
+    padding: 10px 15px;/*10,15*/ 
   }
 
   .logo {
@@ -117,7 +117,7 @@ header
   }
 
   .sec {
-    padding: 0px;
+    padding: 0;
   }
 
   .sec h2 {
