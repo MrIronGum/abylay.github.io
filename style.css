@@ -99,7 +99,7 @@ header
     font-weight: 300;
 }
 
-@media (max-width: 767px) {
+@media (min-width: 700px) and (max-width: 1024px) {
   header {
     padding: 20px 20px;
   }
@@ -127,7 +127,7 @@ header
     width: 90%;
   }
 }
-@media (max-width: 450px) {
+@media (min-width: 300px) and (max-width: 700px) {
   header {
     padding: 15px;
   }
