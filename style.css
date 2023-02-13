@@ -117,7 +117,7 @@ header
   }
 
   .sec {
-    padding: 50px;
+    padding: 20px;
   }
 
   .sec h2 {
@@ -129,7 +129,7 @@ header
 }
 @media (min-width: 300px) and (max-width: 700px) {
   header {
-    padding: 0;
+    padding: 10px 10px;
   }
 
   .logo {
