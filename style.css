@@ -101,7 +101,7 @@ header
 
 @media (min-width: 700px) and (max-width: 1024px) {
   header {
-    padding: 20px 20px;
+    padding: 0px;
   }
 
   .logo {
@@ -117,14 +117,14 @@ header
   }
 
   .sec {
-    padding: 50px;
+    padding: 0px;
   }
 
   .sec h2 {
     font-size: 2em;
   }
   .sec p {
-    width: 90%;
+    width: 100%;
   }
 }
 @media (min-width: 300px) and (max-width: 700px) {
@@ -145,7 +145,7 @@ header
   }
 
   .sec {
-    padding: 15px;
+    padding: 0x;
   }
 
   .sec h2 {
